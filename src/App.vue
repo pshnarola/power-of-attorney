@@ -299,8 +299,10 @@ export default {
         this.position
       ) {
         const content = window.document.querySelector("#pdf");
-        const pos = content.getBoundingClientRect();
-        var doc = new jsPDF("p", "px", [pos.width, pos.height]);
+        var doc = new jsPDF("p", "px", [
+          content.offsetWidth,
+          content.offsetHeight,
+        ]);
         let that = this;
         doc.html(content, {
           callback: function(doc) {
