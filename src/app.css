@@ -53,7 +53,7 @@ body .text-bold {
 }
 .v3dp__elements button:not(:disabled):hover span[data-v-2e128338],
 .v3dp__elements button.selected span[data-v-2e128338] {
-  background: #0dcaf0;
+  background: #0dcaf0 !important;
 }
 .card-body .form-control,
 .card-body input,

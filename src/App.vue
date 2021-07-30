@@ -303,9 +303,17 @@ export default {
           content.offsetWidth,
           content.offsetHeight,
         ]);
+
         let that = this;
         doc.html(content, {
           callback: function(doc) {
+            doc.setFontSize(15);
+            doc.setTextColor("#4c4c4c");
+            doc.text(
+              content.offsetWidth / 2,
+              content.offsetHeight - 20,
+              `Page - ${1}`
+            );
             doc.save(`trademark_${that.trademark}.pdf`);
           },
         });
