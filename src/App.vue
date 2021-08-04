@@ -84,14 +84,15 @@
 
               <div class="row w-100">
                 <div class="col d-flex flex-column info">
-                  <strong>Advocaatenkantoor</strong>
-                  <strong>Jurimark</strong>
-                  <strong>Mr. drs Bas M Pels</strong>
-                  <strong>Thus 20-12</strong>
-                  <strong>6537 LW Nijmegen</strong>
-                  <span style="color:#212529" class="mt-3"
-                    >wird hiermit in Sachen</span
-                  >
+                  <div class="right-address d-flex flex-column info">
+                    <strong>Advocaatenkantoor</strong>
+                    <strong>{{ lawFirm }}</strong>
+                    <strong>{{ representative }}</strong>
+                    <strong class="mb-2" style="white-space: pre-line">{{
+                      address
+                    }}</strong>
+                  </div>
+                  <span style="color: #212529">wird hiermit in Sachen</span>
                 </div>
                 <div class="col d-flex flex-column info">
                   <div class="right-address d-flex flex-column info">
